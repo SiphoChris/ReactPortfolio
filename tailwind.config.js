@@ -1,0 +1,26 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./node_modules/flowbite/**/*.js",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        // secondary: "#2d2d2d",
+        accent: "#FF4500",
+      },
+      keyframes: {
+        spin: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+        animation: {
+          spin: "spin 1s linear infinite",
+        },
+      },
+    },
+  },
+  plugins: [import("flowbite/plugin")],
+};

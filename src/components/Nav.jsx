@@ -1,56 +1,55 @@
 import { useState } from 'react';
-import portfolioData from '../data/index.json';
+import data from '../data/index.json';
+import { Menu, X } from 'lucide-react';
 
 const Nav = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { logo, links } = portfolioData.navigation;
+  const { navigation } = data.result;
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="relative">
-      <nav className="flex justify-between items-center px-6 lg:px-24 h-32 text-white z-10">
-        <a href="#" className="text-2xl font-bold border-2 border-white rounded-full px-2 py-1">
-          {logo}
+    <header className="fixed top-0 left-0 right-0 z-50">
+      <nav className="flex justify-between items-center px-6 md:px-24 h-[8rem] backdrop-blur-sm">
+        {/* Logo */}
+        <a href="#" className="logo text-[#FF4500] font-bold text-2xl md:text-3xl border-4 border-[#FF4500] rounded-full p-1">
+          {navigation.logo}
         </a>
-
-        {/* Mobile menu button */}
-        <button 
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="lg:hidden z-20"
-        >
-          <i className={`fa-solid ${isMenuOpen ? 'fa-xmark' : 'fa-bars'} text-2xl`}></i>
-        </button>
-
-        {/* Desktop Menu */}
-        <ul className="hidden lg:flex gap-6 text-lg font-bold">
-          {links.map((link, index) => (
-            <li key={index}>
-              <a 
-                href={link.href} 
-                className="hover:text-orange-600 transition-colors duration-300"
+        {/* Desktop Navigation */}
+        <ul className="hidden md:flex space-x-8">
+          {navigation.links.map((link) => (
+            <li key={link.href}>
+              <a
+                href={link.href}
+                className="link-item text-[#FF4500] font-bold tracking-wide text-xl hover:text-orange-500 transition-colors"
               >
                 {link.name}
               </a>
             </li>
           ))}
         </ul>
-
-        {/* Mobile Menu */}
-        <div className={`fixed inset-0 bg-black bg-opacity-90 transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 lg:hidden z-10`}>
-          <ul className="flex flex-col items-center justify-center h-full gap-8 text-xl font-bold">
-            {links.map((link, index) => (
-              <li key={index}>
-                <a 
-                  href={link.href} 
-                  className="hover:text-orange-600 transition-colors duration-300"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {link.name}
-                </a>
-              </li>
-            ))}
-          </ul>
+        {/* Mobile Menu Button */}
+        <div className="md:hidden">
+          <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
+            {isOpen ? <X size={24} className="text-white" /> : <Menu size={24} className="text-white" />}
+          </button>
         </div>
       </nav>
+
+      {/* Mobile Navigation Menu */}
+      {isOpen && (
+        <ul className="md:hidden flex flex-col items-center space-y-4 bg-gray-800 py-4">
+          {navigation.links.map((link) => (
+            <li key={link.href}>
+              <a
+                href={link.href}
+                onClick={() => setIsOpen(false)}
+                className="text-white font-bold hover:text-orange-500 transition-colors"
+              >
+                {link.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
     </header>
   );
 };

@@ -1,75 +1,69 @@
-import portfolioData from '../data/index.json';
+import data from '../data/index.json';
+import { Download } from 'lucide-react';
 
-const Hero = () => {
-    const { personalInfo, cv } = portfolioData;
-    const { name, title, contact, social } = personalInfo;
-  
-    return (
-      <section className="min-h-screen relative -mt-32 pt-32 bg-black">
-        {/* Background Image with Overlay */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center scale-x-[-1]"
-          style={{
-            backgroundImage: "url('/images/images/bg-image.png')",
-          }}
-        >
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-        </div>
-  
-        <div className="relative grid lg:grid-cols-2 grid-cols-1 items-center container mx-auto px-6 lg:px-24 py-12">
-          {/* Text Content */}
-          <div className="flex flex-col justify-between h-full gap-24 text-white">
-            <div className="space-y-4 lg:pl-48 pl-6">
-              <h1 className="text-5xl font-bold">Hello there,</h1>
-              <h3 className="text-2xl font-bold">{name} here</h3>
-              
-              {/* Social Links */}
-              <div className="flex gap-4">
-                {social.map((item, index) => (
-                  <a 
-                    key={index}
-                    href={item.url} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    <i className={`${item.icon} text-2xl hover:text-orange-600 transition-colors duration-300`}></i>
-                  </a>
-                ))}
-              </div>
-  
-              {/* Contact Info */}
-              <div className="space-y-2 mt-4">
-                {contact.items.map((item, index) => (
-                  <p key={index}>
-                    <i className={item.icon}></i>&nbsp; {item.value}
-                  </p>
-                ))}
-              </div>
+const HeroSection = () => {
+  const { personalInfo, about, cv } = data.result;
+
+  return (
+    <section
+      id="HOME"
+      className="min-h-screen bg-cover bg-center bg-no-repeat pt-[8rem]"
+      style={{
+        backgroundImage:
+          "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('src/assets/images/images/bg-image.png')",
+      }}
+    >
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center">
+        {/* Left: Text */}
+        <div className="hero-text text-white flex flex-col gap-12 mx-auto">
+          <div>
+            <h1 className="text-4xl md:text-6xl mb-4">Hello there,</h1>
+            <h3 className="text-2xl md:text-3xl">{personalInfo.name} here</h3>
+            <div className="socials flex space-x-4 mt-6">
+              {personalInfo.social.map((social) => (
+                <a
+                  key={social.platform}
+                  href={social.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-orange-500 transition-colors"
+                >
+                  {/* Using the icon class from JSON (or replace with a lucide-react icon) */}
+                  <i className={`${social.icon} text-3xl`}></i>
+                </a>
+              ))}
             </div>
-  
-            <div className="space-y-4 lg:pl-48 pl-6">
-              <p className="text-lg">{title}</p>
-              <a
-                href={cv.path}
-                download
-                className="inline-flex items-center gap-2 bg-orange-600 text-white px-6 py-3 rounded-full border-2 border-gray-200 hover:bg-orange-700 transition-colors duration-300"
-              >
-                {cv.text} <i className={cv.icon}></i>
-              </a>
+            <br />
+            <div className="mt-4">
+              {personalInfo.contact.items.map((item, index) => (
+                <p key={index} className="flex items-center">
+                  <i className={`${item.icon} mr-2`}></i> {item.value}
+                </p>
+              ))}
             </div>
           </div>
-  
-          {/* Profile Image */}
-          <div className="flex justify-center items-center mt-12 lg:mt-0">
-            <img 
-              src="./images/images/profile-image.png" 
-              alt="Profile" 
-              className="w-96 rounded-full border-b-8 border-orange-600"
-            />
+          <div >
+            <p className="text-xl">{personalInfo.title}</p>
+            <a
+              href={cv.path}
+              download
+              className="inline-flex items-center gap-2 bg-orange-500 text-white py-2 px-4 border-2 border-gray-100 rounded-full hover:bg-orange-600 transition-colors mt-4"
+            >
+              <Download size={18} /> {cv.text}
+            </a>
           </div>
         </div>
-      </section>
-    );
-  };
-  
-  export default Hero;
+        {/* Right: Profile Image */}
+        <div className="hero-image flex justify-center items-center">
+          <img
+            src="src/assets/images/images/profile-image.png"
+            alt="Profile"
+            className="w-60 md:w-92 rounded-full border-b-8 border-orange-500"
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;

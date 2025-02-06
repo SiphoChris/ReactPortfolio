@@ -59,69 +59,69 @@
       "technical": [
         {
           "name": "HTML",
-          "icon": "./images/icons/icons8-html-100.svg"
+          "icon": "src/assets/images/icons/icons8-html-100.svg"
         },
         {
           "name": "CSS",
-          "icon": "./images/icons/icons8-css.svg"
+          "icon": "src/assets/images/icons/icons8-css.svg"
         },
         {
           "name": "JavaScript",
-          "icon": "./images/icons/icons8-javascript.svg"
+          "icon": "src/assets/images/icons/icons8-javascript.svg"
         },
         {
           "name": "Vue.js",
-          "icon": "./images/icons/icons8-vue.js-an-open-source-javascript-framework-for-building-user-interfaces-and-single-page-applications.svg"
+          "icon": "src/assets/images/icons/icons8-vue.js-an-open-source-javascript-framework-for-building-user-interfaces-and-single-page-applications.svg"
         },
         {
           "name": "React",
-          "icon": "./images/icons/icons8-react-a-javascript-library-for-building-user-interfaces.svg"
+          "icon": "src/assets/images/icons/icons8-react-a-javascript-library-for-building-user-interfaces.svg"
         },
         {
           "name": "Bootstrap",
-          "icon": "./images/icons/icons8-bootstrap.svg"
+          "icon": "src/assets/images/icons/icons8-bootstrap.svg"
         },
         {
           "name": "Node.js",
-          "icon": "./images/icons/icons8-nodejs.svg"
+          "icon": "src/assets/images/icons/icons8-nodejs.svg"
         },
         {
           "name": "Express.js",
-          "icon": "./images/icons/icons8-express-js.svg"
+          "icon": "src/assets/images/icons/icons8-express-js.svg"
         },
         {
           "name": "MySQL",
-          "icon": "./images/icons/icons8-mysql.svg"
+          "icon": "src/assets/images/icons/icons8-mysql.svg"
         }
       ],
       "tools": [
         {
           "name": "npm",
-          "icon": "./images/icons/icons8-npm.svg"
+          "icon": "src/assets/images/icons/icons8-npm.svg"
         },
         {
           "name": "Git",
-          "icon": "./images/icons/icons8-git.svg"
+          "icon": "src/assets/images/icons/icons8-git.svg"
         },
         {
           "name": "GitHub",
-          "icon": "./images/icons/icons8-github.svg"
+          "icon": "src/assets/images/icons/icons8-github.svg"
         },
         {
           "name": "Postman",
-          "icon": "./images/icons/icons8-postman-is-the-only-complete-api-development-environment.svg"
+          "icon": "src/assets/images/icons/icons8-postman-is-the-only-complete-api-development-environment.svg"
         },
         {
           "name": "Terminal",
-          "icon": "./images/icons/icons8-terminal.svg"
+          "icon": "src/assets/images/icons/icons8-terminal.svg"
         },
         {
-          "name": "Visual Studio Code",
-          "icon": "./images/icons/icons8-visual-studio-code.svg"
+          "name": "VS Code",
+          "icon": "src/assets/images/icons/icons8-visual-studio-code.svg"
         },
         {
           "name": "Vite",
-          "icon": "./images/icons/icons8-vite.svg"
+          "icon": "src/assets/images/icons/icons8-vite.svg"
         }
       ],
       "personal": [
@@ -137,21 +137,21 @@
         "title": "Becoming AWS practitioner certificates",
         "icon": "fa-brands fa-aws",
         "certificates": [
-          "aws-cert1.png",
-          "aws-cert2.png",
-          "aws-cert3.png",
-          "aws-cert4.png",
-          "aws-cert5.png",
-          "aws-cert6.png",
-          "aws-cert7.png",
-          "aws-cert8.png",
-          "aws-cert9.png",
-          "aws-cert10.png",
-          "aws-cert11.png",
-          "aws-cert12.png",
-          "aws-cert13.png",
-          "aws-cert14.png",
-          "aws-cert15.png"
+          { "title": "AWS Certificate 1", "image": "src/assets/images/images/aws-cert1.png" },
+          { "title": "AWS Certificate 2", "image": "src/assets/images/images/aws-cert2.png" },
+          { "title": "AWS Certificate 3", "image": "src/assets/images/images/aws-cert3.png" },
+          { "title": "AWS Certificate 4", "image": "src/assets/images/images/aws-cert4.png" },
+          { "title": "AWS Certificate 5", "image": "src/assets/images/images/aws-cert5.png" },
+          { "title": "AWS Certificate 6", "image": "src/assets/images/images/aws-cert6.png" },
+          { "title": "AWS Certificate 7", "image": "src/assets/images/images/aws-cert7.png" },
+          { "title": "AWS Certificate 8", "image": "src/assets/images/images/aws-cert8.png" },
+          { "title": "AWS Certificate 9", "image": "src/assets/images/images/aws-cert9.png" },
+          { "title": "AWS Certificate 10", "image": "src/assets/images/images/aws-cert10.png" },
+          { "title": "AWS Certificate 11", "image": "src/assets/images/images/aws-cert11.png" },
+          { "title": "AWS Certificate 12", "image": "src/assets/images/images/aws-cert12.png" },
+          { "title": "AWS Certificate 13", "image": "src/assets/images/images/aws-cert13.png" },
+          { "title": "AWS Certificate 14", "image": "src/assets/images/images/aws-cert14.png" },
+          { "title": "AWS Certificate 15", "image": "src/assets/images/images/aws-cert15.png" }
         ]
       }
     },
@@ -202,6 +202,10 @@
           "href": "#SKILLS"
         },
         {
+          "name": "Projects",
+          "href": "#PROJECTS"
+        },
+        {
           "name": "Contact",
           "href": "#CONTACT"
         }
@@ -210,7 +214,7 @@
     "cv": {
       "text": "Download CV",
       "icon": "fa-solid fa-file-arrow-down",
-      "path": "./images/pdf/myResume.pdf"
+      "path": "src/assets/images/pdf/myResume.pdf"
     }
   }
 }

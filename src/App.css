@@ -1,1 +1,170 @@
 @import "tailwindcss";
+
+
+* {
+  font-family: 'Exo 2', sans-serif;
+}
+
+:root {
+  --primary-color: #333;
+  --secondary-color: #e6e5e5;
+  --tertiary-color: #052d69;
+  --accent-color: #FF4500;
+  --light-text-color: #f4f4f4;
+  --dark-text-color: #1d1d1d;
+
+  --nav-height: 8rem; 
+}
+
+:is(h2) {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* ---------ABOUT--------- */
+
+@media screen and (max-width: 530px){
+  #ABOUT article p{
+    width: auto;
+  }}
+
+/* ---------EDUCATION & EXPERIENCE--------- */
+
+.education-info {
+  min-height: 100vh;
+  background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 530px){
+  .education-info {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}}
+
+/* Timeline Container */
+.timeline {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card container */
+.timeline-card {
+  position: relative;
+  max-width: 400px;
+}
+
+/* setting padding based on even or odd */
+.timeline-card:nth-child(odd) {
+  padding: 30px 0 30px 30px;
+}
+.timeline-card:nth-child(even) {
+  padding: 30px 30px 30px 0;
+}
+/* Global ::before */
+.timeline-card::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  border: solid orangered;
+}
+
+/* Setting the border of top, bottom, left */
+.timeline-card:nth-child(odd)::before {
+  left: 0px;
+  top: -4.5px;
+  bottom: -4.5px;
+  border-width: 5px 0 5px 5px;
+  border-radius: 50px 0 0 50px;
+}
+
+/* Setting the border of top, bottom, right */
+.timeline-card:nth-child(even)::before {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-width: 5px 5px 5px 0;
+  border-radius: 0 50px 50px 0;
+}
+
+/* Removing the border if it is the first timeline-card */
+.timeline-card:first-child::before {
+  border-top: 0;
+  border-top-left-radius: 0;
+}
+
+/* Removing the border if it is the last timeline-card  and it's odd */
+.timeline-card:last-child:nth-child(odd)::before {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Removing the border if it is the last timeline-card  and it's even */
+.timeline-card:last-child:nth-child(even)::before {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  background: #333;
+  color: gray;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Title of the timeline-card */
+.title {
+  color: orangered;
+  position: relative;
+}
+
+/* Timeline dot  */
+.title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  border: 3px solid orangered;
+}
+
+.info h5 {
+  color: var(--secondary-color);
+  padding: .6rem 0;
+}
+
+.info h5.middle {
+    text-align: right;
+}
+
+/* text right if the timeline-card is even  */
+.timeline-card:nth-child(even) > .info > .title {
+  text-align: right;
+}
+
+/* setting dot to the left if the timeline-card is odd */
+.timeline-card:nth-child(odd) > .info > .title::before {
+  left: -45px;
+}
+
+/* setting dot to the right if the timeline-card is odd */
+.timeline-card:nth-child(even) > .info > .title::before {
+  right: -45px;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,216 @@
+{
+  "result": {
+    "personalInfo": {
+      "name": "Sipho Nkebe",
+      "title": "Aspiring web developer",
+      "contact": {
+        "items": [
+          {
+            "type": "email",
+            "value": "siphonkebe@gmail.com",
+            "icon": "fa-solid fa-envelope"
+          },
+          {
+            "type": "phone",
+            "value": "+27 78 653 2365",
+            "icon": "fa-solid fa-phone"
+          },
+          {
+            "type": "location",
+            "value": "Philippi, Cape Town, South Africa",
+            "icon": "fa-solid fa-location-dot"
+          }
+        ]
+      },
+      "social": [
+        {
+          "platform": "LinkedIn",
+          "url": "https://www.linkedin.com/in/sipho-nkebe-979783312/",
+          "icon": "fa-brands fa-linkedin"
+        },
+        {
+          "platform": "GitHub",
+          "url": "https://github.com/SiphoChris",
+          "icon": "fa-brands fa-github"
+        }
+      ]
+    },
+    "about": {
+      "description": "My name is Sipho Nkebe, I am a web developer. I have a passion for creating and learning new things. My journey began in 2021 when I wrote my first piece of code in python. Since then, I have explored various technologies to deepen my skills and expand my knowledge in the field of web development. As a tech enthusiast, I am committed to staying up to date with the latest technologies and trends in the industry. I am excited to continue learning and growing as a web developer."
+    },
+    "timeline": [
+      {
+        "period": "2024 – current",
+        "title": "Intern developer",
+        "description": "I am currently working at LC Studio as an intern."
+      },
+      {
+        "period": "2024 – 2024",
+        "title": "Student",
+        "description": "I enrolled into a 6 months web development bootcamp at LC Academy."
+      },
+      {
+        "period": "2023",
+        "title": "Matric student",
+        "description": "I finished my matric at Zingisa Comprehensive High School in Mthatha, Eastern Cape."
+      }
+    ],
+    "skills": {
+      "technical": [
+        {
+          "name": "HTML",
+          "icon": "./images/icons/icons8-html-100.svg"
+        },
+        {
+          "name": "CSS",
+          "icon": "./images/icons/icons8-css.svg"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "./images/icons/icons8-javascript.svg"
+        },
+        {
+          "name": "Vue.js",
+          "icon": "./images/icons/icons8-vue.js-an-open-source-javascript-framework-for-building-user-interfaces-and-single-page-applications.svg"
+        },
+        {
+          "name": "React",
+          "icon": "./images/icons/icons8-react-a-javascript-library-for-building-user-interfaces.svg"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "./images/icons/icons8-bootstrap.svg"
+        },
+        {
+          "name": "Node.js",
+          "icon": "./images/icons/icons8-nodejs.svg"
+        },
+        {
+          "name": "Express.js",
+          "icon": "./images/icons/icons8-express-js.svg"
+        },
+        {
+          "name": "MySQL",
+          "icon": "./images/icons/icons8-mysql.svg"
+        }
+      ],
+      "tools": [
+        {
+          "name": "npm",
+          "icon": "./images/icons/icons8-npm.svg"
+        },
+        {
+          "name": "Git",
+          "icon": "./images/icons/icons8-git.svg"
+        },
+        {
+          "name": "GitHub",
+          "icon": "./images/icons/icons8-github.svg"
+        },
+        {
+          "name": "Postman",
+          "icon": "./images/icons/icons8-postman-is-the-only-complete-api-development-environment.svg"
+        },
+        {
+          "name": "Terminal",
+          "icon": "./images/icons/icons8-terminal.svg"
+        },
+        {
+          "name": "Visual Studio Code",
+          "icon": "./images/icons/icons8-visual-studio-code.svg"
+        },
+        {
+          "name": "Vite",
+          "icon": "./images/icons/icons8-vite.svg"
+        }
+      ],
+      "personal": [
+        "Critical thinking",
+        "Analytical thinking",
+        "Problem solving",
+        "Creative thinking",
+        "Time management"
+      ]
+    },
+    "achievements": {
+      "certifications": {
+        "title": "Becoming AWS practitioner certificates",
+        "icon": "fa-brands fa-aws",
+        "certificates": [
+          "aws-cert1.png",
+          "aws-cert2.png",
+          "aws-cert3.png",
+          "aws-cert4.png",
+          "aws-cert5.png",
+          "aws-cert6.png",
+          "aws-cert7.png",
+          "aws-cert8.png",
+          "aws-cert9.png",
+          "aws-cert10.png",
+          "aws-cert11.png",
+          "aws-cert12.png",
+          "aws-cert13.png",
+          "aws-cert14.png",
+          "aws-cert15.png"
+        ]
+      }
+    },
+    "contact": {
+      "title": "Let's get in touch",
+      "form": {
+        "endpoint": "https://formspree.io/f/xldgbyby",
+        "method": "POST",
+        "fields": [
+          {
+            "type": "text",
+            "name": "full-name",
+            "placeholder": "Full Name"
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "placeholder": "Email"
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "placeholder": "Leave me a message..."
+          }
+        ]
+      },
+      "location": {
+        "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.2257224344943!2d18.58444257565794!3d-34.00167937311998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc48333e26e929%3A0xdea78574893843d7!2sLower%20Crossroads%2C%20Cape%20Town!5e0!3m2!1sen!2sza!4v1706529386285"
+      }
+    },
+    "navigation": {
+      "logo": "SN",
+      "links": [
+        {
+          "name": "Home",
+          "href": "#HOME"
+        },
+        {
+          "name": "About",
+          "href": "#ABOUT"
+        },
+        {
+          "name": "Education & Experience",
+          "href": "#RESUME"
+        },
+        {
+          "name": "Skills",
+          "href": "#SKILLS"
+        },
+        {
+          "name": "Contact",
+          "href": "#CONTACT"
+        }
+      ]
+    },
+    "cv": {
+      "text": "Download CV",
+      "icon": "fa-solid fa-file-arrow-down",
+      "path": "./images/pdf/myResume.pdf"
+    }
+  }
+}

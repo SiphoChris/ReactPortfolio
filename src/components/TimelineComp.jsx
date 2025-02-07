@@ -1,6 +1,6 @@
 const Timeline = () => {
   return (
-    <article className="education-info">
+    <article className="education-info pt-8" id="RESUME">
           <div className="timeline">
             <div className="outer">
               <div className="timeline-card">

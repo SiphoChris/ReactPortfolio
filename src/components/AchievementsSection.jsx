@@ -6,7 +6,7 @@ const Achievements = () => {
   const certificates = certifications.certificates;
 
   return (
-    <section className="achievements md:px-24 py-16 bg-gray-900">
+    <section className="achievements md:px-24 py-16 bg-[#333]">
       <h2 className="text-center text-3xl font-bold text-white mb-4">
         Achievements &nbsp; <i className={certifications.icon}></i>
       </h2>

@@ -18,6 +18,7 @@
 
 :is(h2) {
   text-align: center;
+  color: var(--accent-color);
 }
 
 a {

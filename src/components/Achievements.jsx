@@ -128,6 +128,7 @@
 // export default Achievements;
 
 import { useState } from 'react';
+import data from '../data/index.json';
 
 const Achievements = () => {
   const { achievements } = data.result;

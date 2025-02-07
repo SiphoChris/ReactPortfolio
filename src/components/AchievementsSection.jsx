@@ -4,18 +4,23 @@ const Achievements = () => {
   const { achievements } = data.result;
   const { certifications } = achievements;
   const certificates = certifications.certificates;
-  
 
   return (
     <section className="achievements md:px-24 py-16 bg-gray-900">
       <h2 className="text-center text-3xl font-bold text-white mb-4">
         Achievements &nbsp; <i className={certifications.icon}></i>
       </h2>
-      <p className="text-center text-md text-white mb-8">{certifications.title}</p>
+      <p className="text-center text-md text-white mb-8">
+        {certifications.title}
+      </p>
 
-      <div id="default-carousel" className="relative w-full" data-carousel="slide">
+      <div
+        id="default-carousel"
+        className="relative w-full"
+        data-carousel="slide"
+      >
         {/* Carousel wrapper */}
-        <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+        {/* <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
           {certificates.map((certificate, index) => (
             <div
               key={index}
@@ -23,10 +28,27 @@ const Achievements = () => {
               data-carousel-item
             >
               <img
-              loading="lazy"
+                loading="lazy"
                 src={certificate.image}
                 alt={certificate.title}
                 className="w-full h-full object-contain"
+              />
+            </div>
+          ))}
+        </div> */}
+
+        <div className="relative min-h-[250px] md:h-96 overflow-hidden rounded-lg">
+          {certificates.map((certificate, index) => (
+            <div
+              key={index}
+              className="hidden duration-700 ease-in-out"
+              data-carousel-item
+            >
+              <img
+                loading="lazy"
+                src={certificate.image}
+                alt={certificate.title}
+                className="w-full h-full object-contain md:h-auto"
               />
             </div>
           ))}

@@ -47,6 +47,7 @@ const HeroSection = () => {
             <a
               href={cv.path}
               download
+              target='_blank'
               className="inline-flex items-center gap-2 bg-orange-500 text-white py-2 px-4 border-2 border-gray-100 rounded-full hover:bg-orange-600 transition-colors mt-4"
             >
               <Download size={18} /> {cv.text}
@@ -54,7 +55,7 @@ const HeroSection = () => {
           </div>
         </div>
         {/* Right: Profile Image */}
-        <div className="hero-image flex justify-center items-center">
+        <div className="hero-image mb-4 md:mb-0 flex justify-center items-center">
           <img
           loading='lazy'
             src="https://siphochris.github.io/images/images/assets/images/images/profile-image.png"

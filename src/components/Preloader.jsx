@@ -4,10 +4,9 @@ const Preloader = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // setTimeout(() => {
-    //   setIsLoading(false);
-    // }, 2000);
-    setIsLoading(false);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
   }, []);
 
   return (

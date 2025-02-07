@@ -23,6 +23,7 @@ const Achievements = () => {
               data-carousel-item
             >
               <img
+              loading="lazy"
                 src={certificate.image}
                 alt={certificate.title}
                 className="w-full h-full object-contain"

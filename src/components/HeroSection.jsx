@@ -10,7 +10,7 @@ const HeroSection = () => {
       className="min-h-screen bg-cover bg-center bg-no-repeat pt-[8rem]"
       style={{
         backgroundImage:
-          "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('src/assets/images/images/bg-image.png')",
+          "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://siphochris.github.io/images/images/assets/images/images/bg-image.png')",
       }}
     >
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center">
@@ -56,7 +56,8 @@ const HeroSection = () => {
         {/* Right: Profile Image */}
         <div className="hero-image flex justify-center items-center">
           <img
-            src="src/assets/images/images/profile-image.png"
+          loading='lazy'
+            src="https://siphochris.github.io/images/images/assets/images/images/profile-image.png"
             alt="Profile"
             className="w-60 md:w-92 rounded-full border-b-8 border-orange-500"
           />

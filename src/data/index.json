@@ -59,69 +59,69 @@
       "technical": [
         {
           "name": "HTML",
-          "icon": "@/assets/images/icons/icons8-html-100.svg"
+          "icon": "https://siphochris.github.io/images/images/assets/images/icons/icons8-html-100.svg"
         },
         {
           "name": "CSS",
-          "icon": "@/assets/images/icons/icons8-css.svg"
+          "icon": "https://siphochris.github.io/images/images/assets/images/icons/icons8-css.svg"
         },
         {
           "name": "JavaScript",
-          "icon": "@/assets/images/icons/icons8-javascript.svg"
+          "icon": "https://siphochris.github.io/images/images/assets/images/icons/icons8-javascript.svg"
         },
         {
           "name": "Vue.js",
-          "icon": "@/assets/images/icons/icons8-vue.js-an-open-source-javascript-framework-for-building-user-interfaces-and-single-page-applications.svg"
+          "icon": "https://siphochris.github.io/images/images/assets/images/icons/icons8-vue.js-an-open-source-javascript-framework-for-building-user-interfaces-and-single-page-applications.svg"
         },
         {
           "name": "React",
-          "icon": "@/assets/images/icons/icons8-react-a-javascript-library-for-building-user-interfaces.svg"
+          "icon": "https://siphochris.github.io/images/images/assets/images/icons/icons8-react-a-javascript-library-for-building-user-interfaces.svg"
         },
         {
           "name": "Bootstrap",
-          "icon": "@/assets/images/icons/icons8-bootstrap.svg"
+          "icon": "https://siphochris.github.io/images/images/assets/images/icons/icons8-bootstrap.svg"
         },
         {
           "name": "Node.js",
-          "icon": "@/assets/images/icons/icons8-nodejs.svg"
+          "icon": "https://siphochris.github.io/images/images/assets/images/icons/icons8-nodejs.svg"
         },
         {
           "name": "Express.js",
-          "icon": "@/assets/images/icons/icons8-express-js.svg"
+          "icon": "https://siphochris.github.io/images/images/assets/images/icons/icons8-express-js.svg"
         },
         {
           "name": "MySQL",
-          "icon": "@/assets/images/icons/icons8-mysql.svg"
+          "icon": "https://siphochris.github.io/images/images/assets/images/icons/icons8-mysql.svg"
         }
       ],
       "tools": [
         {
           "name": "npm",
-          "icon": "@/assets/images/icons/icons8-npm.svg"
+          "icon": "https://siphochris.github.io/images/images/assets/images/icons/icons8-npm.svg"
         },
         {
           "name": "Git",
-          "icon": "@/assets/images/icons/icons8-git.svg"
+          "icon": "https://siphochris.github.io/images/images/assets/images/icons/icons8-git.svg"
         },
         {
           "name": "GitHub",
-          "icon": "@/assets/images/icons/icons8-github.svg"
+          "icon": "https://siphochris.github.io/images/images/assets/images/icons/icons8-github.svg"
         },
         {
           "name": "Postman",
-          "icon": "@/assets/images/icons/icons8-postman-is-the-only-complete-api-development-environment.svg"
+          "icon": "https://siphochris.github.io/images/images/assets/images/icons/icons8-postman-is-the-only-complete-api-development-environment.svg"
         },
         {
           "name": "Terminal",
-          "icon": "@/assets/images/icons/icons8-terminal.svg"
+          "icon": "https://siphochris.github.io/images/images/assets/images/icons/icons8-terminal.svg"
         },
         {
           "name": "VS Code",
-          "icon": "@/assets/images/icons/icons8-visual-studio-code.svg"
+          "icon": "https://siphochris.github.io/images/images/assets/images/icons/icons8-visual-studio-code.svg"
         },
         {
           "name": "Vite",
-          "icon": "@/assets/images/icons/icons8-vite.svg"
+          "icon": "https://siphochris.github.io/images/images/assets/images/icons/icons8-vite.svg"
         }
       ],
       "personal": [
@@ -135,28 +135,28 @@
         {
           "title": "Bloomly",
           "description": "Fullstack project, built with Vue.js, Node.js, Express.js, MySQL, and Bootstrap.",
-          "image_link": "@/assets/images/images/bloomly.png",
+          "image_link": "https://siphochris.github.io/images/images/assets/images/images/bloomly.png",
           "github_url": "https://github.com/SiphoChris/Bloomly.git",
           "live_url": "https://bloomly.vercel.app/"
         },
         {
           "title": "Portfolio",
           "description": "A portfolio website built with Vue.js, CSS, Bootstrap, and JavaScript.",
-          "image_link": "@/assets/images/images/portfolio.png",
+          "image_link": "https://siphochris.github.io/images/images/assets/images/images/portfolio.png",
           "github_url": "https://github.com/SiphoChris/MyVuePortfolio.git",
           "live_url": "https://my-vue-portfolio-nine.vercel.app/"
         },
         {
           "title": "Quote generator",
           "description": "A quote generator website built with HTML, CSS, and JavaScript.",
-          "image_link": "@/assets/images/images/quote-generator.png",
+          "image_link": "https://siphochris.github.io/images/images/assets/images/images/quote-generator.png",
           "github_url": "https://github.com/SiphoChris/quote-generator",
           "live_url": "https://quote-generator-k27s.vercel.app/"
         },
         {
           "title": "DroneShop",
           "description": "A drone shop ecommerce website built with HTML, CSS, and JavaScript.",
-          "image_link": "@/assets/images/images/drone-shop.png",
+          "image_link": "https://siphochris.github.io/images/images/assets/images/images/drone-shop.png",
           "github_url": "https://github.com/SiphoChris/DroneShop",
           "live_url": "https://drone-shop-plum.vercel.app/"
         }
@@ -167,21 +167,21 @@
         "title": "Becoming AWS practitioner certificates",
         "icon": "fa-brands fa-aws",
         "certificates": [
-          { "title": "AWS Certificate 1", "image": "@/assets/images/images/aws-cert1.png" },
-          { "title": "AWS Certificate 2", "image": "@/assets/images/images/aws-cert2.png" },
-          { "title": "AWS Certificate 3", "image": "@/assets/images/images/aws-cert3.png" },
-          { "title": "AWS Certificate 4", "image": "@/assets/images/images/aws-cert4.png" },
-          { "title": "AWS Certificate 5", "image": "@/assets/images/images/aws-cert5.png" },
-          { "title": "AWS Certificate 6", "image": "@/assets/images/images/aws-cert6.png" },
-          { "title": "AWS Certificate 7", "image": "@/assets/images/images/aws-cert7.png" },
-          { "title": "AWS Certificate 8", "image": "@/assets/images/images/aws-cert8.png" },
-          { "title": "AWS Certificate 9", "image": "@/assets/images/images/aws-cert9.png" },
-          { "title": "AWS Certificate 10", "image": "@/assets/images/images/aws-cert10.png" },
-          { "title": "AWS Certificate 11", "image": "@/assets/images/images/aws-cert11.png" },
-          { "title": "AWS Certificate 12", "image": "@/assets/images/images/aws-cert12.png" },
-          { "title": "AWS Certificate 13", "image": "@/assets/images/images/aws-cert13.png" },
-          { "title": "AWS Certificate 14", "image": "@/assets/images/images/aws-cert14.png" },
-          { "title": "AWS Certificate 15", "image": "@/assets/images/images/aws-cert15.png" }
+          { "title": "AWS Certificate 1", "image": "https://siphochris.github.io/images/images/assets/images/images/aws-cert1.png" },
+          { "title": "AWS Certificate 2", "image": "https://siphochris.github.io/images/images/assets/images/images/aws-cert2.png" },
+          { "title": "AWS Certificate 3", "image": "https://siphochris.github.io/images/images/assets/images/images/aws-cert3.png" },
+          { "title": "AWS Certificate 4", "image": "https://siphochris.github.io/images/images/assets/images/images/aws-cert4.png" },
+          { "title": "AWS Certificate 5", "image": "https://siphochris.github.io/images/images/assets/images/images/aws-cert5.png" },
+          { "title": "AWS Certificate 6", "image": "https://siphochris.github.io/images/images/assets/images/images/aws-cert6.png" },
+          { "title": "AWS Certificate 7", "image": "https://siphochris.github.io/images/images/assets/images/images/aws-cert7.png" },
+          { "title": "AWS Certificate 8", "image": "https://siphochris.github.io/images/images/assets/images/images/aws-cert8.png" },
+          { "title": "AWS Certificate 9", "image": "https://siphochris.github.io/images/images/assets/images/images/aws-cert9.png" },
+          { "title": "AWS Certificate 10", "image": "https://siphochris.github.io/images/images/assets/images/images/aws-cert10.png" },
+          { "title": "AWS Certificate 11", "image": "https://siphochris.github.io/images/images/assets/images/images/aws-cert11.png" },
+          { "title": "AWS Certificate 12", "image": "https://siphochris.github.io/images/images/assets/images/images/aws-cert12.png" },
+          { "title": "AWS Certificate 13", "image": "https://siphochris.github.io/images/images/assets/images/images/aws-cert13.png" },
+          { "title": "AWS Certificate 14", "image": "https://siphochris.github.io/images/images/assets/images/images/aws-cert14.png" },
+          { "title": "AWS Certificate 15", "image": "https://siphochris.github.io/images/images/assets/images/images/aws-cert15.png" }
         ]
       }
     },
@@ -244,7 +244,7 @@
     "cv": {
       "text": "Download CV",
       "icon": "fa-solid fa-file-arrow-down",
-      "path": "@/assets/images/pdf/myResume.pdf"
+      "path": "https://siphochris.github.io/images/images/assets/images/pdf/myResume.pdf"
     }
   }
 }

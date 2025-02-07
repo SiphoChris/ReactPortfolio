@@ -8,9 +8,10 @@ const About = () => {
       <article className="flex flex-col md:flex-row items-center justify-center gap-16 md:gap-32">
         <div className="illustration-container">
           <img
-            src="src/assets/images/illustrations/undraw_about-me_5990.svg"
+            src="https://siphochris.github.io/images/images/assets/images/illustrations/undraw_about-me_5990.svg"
             alt="Illustration"
             className="w-64"
+            loading="lazy"
           />
         </div>
         <p className="w-[45ch] text-lg leading-relaxed">

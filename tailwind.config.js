@@ -3,12 +3,11 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,jsx,ts,tsx}",
-    "node_modules/flowbite/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
     extend: {
       colors: {
-        // secondary: "#2d2d2d",
+        secondary: "#2d2d2d",
         accent: "#FF4500",
       },
       keyframes: {
@@ -22,5 +21,5 @@ export default {
       },
     },
   },
-  plugins: [import("flowbite/plugin")],
+  plugins: [],
 };

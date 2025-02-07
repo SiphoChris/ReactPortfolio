@@ -1,9 +1,30 @@
-import data from "../data/index.json";
+import { useEffect } from 'react';
+import data from '../data/index.json';
 
 const Achievements = () => {
   const { achievements } = data.result;
   const { certifications } = achievements;
   const certificates = certifications.certificates;
+
+  useEffect(() => {
+    // Get the target carousel element
+    const carouselElement = document.getElementById('default-carousel');
+    
+    // Import Flowbite carousel when component mounts
+    import('flowbite').then(({ Carousel }) => {
+      // Get carousel items
+      const items = carouselElement.querySelectorAll('[data-carousel-item]');
+      
+      // Initialize the carousel
+      if (carouselElement && items.length > 0) {
+        new Carousel(carouselElement, items, {
+          interval: 3000,
+          indicators: true,
+          animation: 'slide'
+        });
+      }
+    });
+  }, []);
 
   return (
     <section className="achievements md:px-24 py-16 bg-[#333]">
@@ -24,14 +45,14 @@ const Achievements = () => {
           {certificates.map((certificate, index) => (
             <div
               key={index}
-              className="hidden duration-700 ease-in-out"
-              data-carousel-item
+              className={index === 0 ? "duration-700 ease-in-out" : "hidden duration-700 ease-in-out"}
+              data-carousel-item={index === 0 ? "active" : ""}
             >
               <img
-                loading="lazy"
+                loading={index === 0 ? "eager" : "lazy"}
                 src={certificate.image}
                 alt={certificate.title}
-                className="w-full h-full object-contain"
+                className="absolute block w-full h-full object-contain"
               />
             </div>
           ))}
@@ -43,7 +64,8 @@ const Achievements = () => {
             <button
               key={index}
               type="button"
-              className="w-3 h-3 rounded-full bg-white"
+              className="w-3 h-3 rounded-full bg-white/50 hover:bg-white dark:bg-gray-800/50 dark:hover:bg-gray-800"
+              aria-current={index === 0 ? "true" : "false"}
               aria-label={`Slide ${index + 1}`}
               data-carousel-slide-to={index}
             ></button>

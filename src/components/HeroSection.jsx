@@ -2,7 +2,7 @@ import data from '../data/index.json';
 import { Download } from 'lucide-react';
 
 const HeroSection = () => {
-  const { personalInfo, about, cv } = data.result;
+  const { personalInfo, cv } = data.result;
 
   return (
     <section
@@ -17,7 +17,7 @@ const HeroSection = () => {
         {/* Left: Text */}
         <div className="hero-text text-white flex flex-col gap-12 mx-auto">
           <div>
-            <h1 className="text-4xl md:text-6xl mb-4">Hello there,</h1>
+            <h1 className="font-bold text-5xl md:text-6xl mb-4">Hello there,</h1>
             <h3 className="text-2xl md:text-3xl">{personalInfo.name} here</h3>
             <div className="socials flex space-x-4 mt-6">
               {personalInfo.social.map((social) => (
@@ -34,7 +34,7 @@ const HeroSection = () => {
               ))}
             </div>
             <br />
-            <div className="mt-4">
+            <div className="mt-4 text-lg/relaxed">
               {personalInfo.contact.items.map((item, index) => (
                 <p key={index} className="flex items-center">
                   <i className={`${item.icon} mr-2`}></i> {item.value}
@@ -42,7 +42,7 @@ const HeroSection = () => {
               ))}
             </div>
           </div>
-          <div >
+          <div className='text-center md:text-left'>
             <p className="text-xl">{personalInfo.title}</p>
             <a
               href={cv.path}

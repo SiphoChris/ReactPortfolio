@@ -29,7 +29,7 @@ const Nav = () => {
         {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
-            {isOpen ? <X size={24} className="text-white" /> : <Menu size={24} className="text-white" />}
+            {isOpen ? <X size={24} className="text-[#FF4500]" /> : <Menu size={24} className="text-[#FF4500]" />}
           </button>
         </div>
       </nav>

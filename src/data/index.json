@@ -130,6 +130,36 @@
         "Problem solving",
         "Creative thinking",
         "Time management"
+      ],
+      "projects": [
+        {
+          "title": "Bloomly",
+          "description": "Fullstack project, built with Vue.js, Node.js, Express.js, MySQL, and Bootstrap.",
+          "image_link": "src/assets/images/images/bloomly.png",
+          "github_url": "https://github.com/SiphoChris/Bloomly.git",
+          "live_url": "https://bloomly.vercel.app/"
+        },
+        {
+          "title": "Portfolio",
+          "description": "A portfolio website built with Vue.js, CSS, Bootstrap, and JavaScript.",
+          "image_link": "src/assets/images/images/portfolio.png",
+          "github_url": "https://github.com/SiphoChris/MyVuePortfolio.git",
+          "live_url": "https://my-vue-portfolio-nine.vercel.app/"
+        },
+        {
+          "title": "Quote generator",
+          "description": "A quote generator website built with HTML, CSS, and JavaScript.",
+          "image_link": "src/assets/images/images/quote-generator.png",
+          "github_url": "https://github.com/SiphoChris/quote-generator",
+          "live_url": "https://quote-generator-k27s.vercel.app/"
+        },
+        {
+          "title": "DroneShop",
+          "description": "A drone shop ecommerce website built with HTML, CSS, and JavaScript.",
+          "image_link": "src/assets/images/images/drone-shop.png",
+          "github_url": "https://github.com/SiphoChris/DroneShop",
+          "live_url": "https://drone-shop-plum.vercel.app/"
+        }
       ]
     },
     "achievements": {

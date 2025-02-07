@@ -20,7 +20,7 @@ const Achievements = () => {
         data-carousel="slide"
       >
         {/* Carousel wrapper */}
-        {/* <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+        <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
           {certificates.map((certificate, index) => (
             <div
               key={index}
@@ -32,23 +32,6 @@ const Achievements = () => {
                 src={certificate.image}
                 alt={certificate.title}
                 className="w-full h-full object-contain"
-              />
-            </div>
-          ))}
-        </div> */}
-
-        <div className="relative min-h-[250px] md:h-96 overflow-hidden rounded-lg">
-          {certificates.map((certificate, index) => (
-            <div
-              key={index}
-              className="hidden duration-700 ease-in-out"
-              data-carousel-item
-            >
-              <img
-                loading="lazy"
-                src={certificate.image}
-                alt={certificate.title}
-                className="w-full h-full object-contain md:h-auto"
               />
             </div>
           ))}

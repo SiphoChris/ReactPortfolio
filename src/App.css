@@ -13,7 +13,7 @@
   --light-text-color: #f4f4f4;
   --dark-text-color: #1d1d1d;
 
-  --nav-height: 8rem; 
+  --nav-height: 6rem; 
 }
 
 :is(h2) {

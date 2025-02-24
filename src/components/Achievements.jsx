@@ -33,7 +33,7 @@ const Achievements = () => {
   return (
     <section className="achievements md:px-24 py-16 bg-[#333]">
       <h2 className="text-center text-3xl font-bold text-white mb-4">
-        Achievements &nbsp; <i className=`${certifications.icon} text-white`></i>
+        Achievements &nbsp; <span className="text-white"><i className={certifications.icon}></i></span>
       </h2>
       <p className="text-center text-md text-white mb-8">
         {certifications.title}

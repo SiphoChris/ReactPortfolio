@@ -75,7 +75,7 @@
         },
         {
           "name": "TailwindCSS",
-          "icon": "assets/images/icons/icons8-tailwindcss.svg"
+          "icon": "https://siphochris.github.io/images/images/assets/images/icons/icons8-tailwindcss.svg"
         },
         {
           "name": "Node.js",

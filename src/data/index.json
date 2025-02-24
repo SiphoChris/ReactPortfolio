@@ -70,10 +70,6 @@
           "icon": "https://siphochris.github.io/images/images/assets/images/icons/icons8-javascript.svg"
         },
         {
-          "name": "Vue.js",
-          "icon": "https://siphochris.github.io/images/images/assets/images/icons/icons8-vue.js-an-open-source-javascript-framework-for-building-user-interfaces-and-single-page-applications.svg"
-        },
-        {
           "name": "React",
           "icon": "https://siphochris.github.io/images/images/assets/images/icons/icons8-react-a-javascript-library-for-building-user-interfaces.svg"
         },

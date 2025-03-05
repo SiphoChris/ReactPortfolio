@@ -128,6 +128,14 @@
         "Time management"
       ],
       "projects": [
+        Screenshot 2025-03-05 100307.png
+        {
+          "title": "Bloomly",
+          "description": "rontend project, built with React.js, and TailwindCSS.",
+          "image_link": "https://siphochris.github.io/images/images/assets/images/Screenshot 2025-03-05 100307.png",
+          "github_url": "https://github.com/SiphoChris/adora.git",
+          "live_url": "adora-1vu7ge4ie-siphos-projects-5834c4e5.vercel.app"
+        },
         {
           "title": "Bloomly",
           "description": "Fullstack project, built with Vue.js, Node.js, Express.js, MySQL, and Bootstrap.",

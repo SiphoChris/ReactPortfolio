@@ -143,11 +143,11 @@
           "live_url": "https://bloomly.vercel.app/"
         },
         {
-          "title": "Portfolio",
-          "description": "A portfolio website built with Vue.js, CSS, Bootstrap, and JavaScript.",
-          "image_link": "https://siphochris.github.io/images/images/assets/images/images/portfolio.png",
-          "github_url": "https://github.com/SiphoChris/MyVuePortfolio.git",
-          "live_url": "https://my-vue-portfolio-nine.vercel.app/"
+          "title": "Hulu clone",
+          "description": "A clone website based  on Hulu, build with HTML and CSS.",
+          "image_link": "https://siphochris.github.io/images/images/assets/images/images/hulu-clone.png",
+          "github_url": "https://github.com/SiphoChris/Hulu_clone.git",
+          "live_url": "https://hulu-clone-mu-ashen.vercel.app/"
         },
         {
           "title": "Quote generator",

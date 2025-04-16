@@ -129,6 +129,13 @@
       ],
       "projects": [
         {
+          "title": "Sharenet",
+          "description": "Fullstack project, built with Vue.js, TailwindCSS, Express.js, and MySQL.",
+          "image_link": "https://siphochris.github.io/images/images/assets/images/images/adora-hero-image.png",
+          "github_url": "https://github.com/SiphoChris/sharenet-client.git",
+          "live_url": "https://sharenet-client.vercel.app/"
+        },
+        {
           "title": "Adora",
           "description": "Frontend project, built with React.js, and TailwindCSS.",
           "image_link": "https://siphochris.github.io/images/images/assets/images/images/adora-hero-image.png",
@@ -141,6 +148,13 @@
           "image_link": "https://siphochris.github.io/images/images/assets/images/images/bloomly.png",
           "github_url": "https://github.com/SiphoChris/Bloomly.git",
           "live_url": "https://bloomly.vercel.app/"
+        },
+        {
+          "title": "Headphones Co",
+          "description": "Frontend project, built with React.js, and TailwindCSS.",
+          "image_link": "https://siphochris.github.io/images/images/assets/images/images/adora-hero-image.png",
+          "github_url": "https://github.com/SiphoChris/headphones-co.git",
+          "live_url": "https://headphones-co.vercel.app/"
         },
         {
           "title": "Hulu clone",
